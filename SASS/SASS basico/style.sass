@@ -1,0 +1,47 @@
+$color:rgb(62, 104, 146)
+$fondo: radial-gradient(#5cc048, #083705)
+
+@mixin filacentrada
+
+    display: flex
+    justify-content: center
+    align-items: center 
+
+@mixin estilosparrafo($param1, $param2, $param3, $param4, $param5)
+()
+    background-color: $param1
+    color: $param2
+    font-family: $param3
+    font-style: $param4
+    font-weight: $param5
+
+*
+    box-sizing: border-box
+    top: 0px
+    margin: 0px
+
+body
+    @include filacentrada
+    background: $fondo
+    width: 100vw
+    height: 100vh
+
+.caja
+    display: none
+    justify-content: center
+    gap: 30px
+
+.contenedor
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 
+    width: 90vw
+    height: 90vh
+    place-items: center
+    background: #ff1616
+    & div
+        background-color: $color
+        padding: 10px
+        &_parrafo
+            @include estilosparrafo(#ef0b0b,#0bf66d8e, Arial, normal, 500)
+
+

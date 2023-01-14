@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  top: 0px;
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(#5cc048, #083705);
+  width: 100vw;
+  height: 100vh;
+}
+
+.caja {
+  display: none;
+  justify-content: center;
+  gap: 30px;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 90vw;
+  height: 90vh;
+  place-items: center;
+}
+.contenedor div {
+  background-color: rgb(62, 104, 146);
+  padding: 10px;
+}
+.contenedor div_parrafo {
+  background-color: #000000;
+  color: rgb(62, 104, 146);
+}/*# sourceMappingURL=style.css.map */
